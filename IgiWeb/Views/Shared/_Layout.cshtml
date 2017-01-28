@@ -1,0 +1,145 @@
+﻿@{}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- For IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- For Resposive Device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>LEGAL STATION- Responsive html5 legal solution template</title>
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/fav-icon/icon.png">
+
+
+		<!-- Main style sheet -->
+		<link rel="stylesheet" type="text/css" href="~/Content/style.css">
+		<!-- responsive style sheet -->
+		<link rel="stylesheet" type="text/css" href="~/Content/responsive.css">
+
+
+		<!-- Fix Internet Explorer ______________________________________-->
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+
+
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+
+
+		<div class="main-page-wrapper">
+
+			<!-- Header ___________________________ -->
+			<div class="style-two">
+				<header>
+					<div class="main-menu clear-fix container">
+						<a href="index.html" class="logo pull-left"><img src="../images/logo/adwokatura_logo.png" alt="logo"></a>
+						<!--<form action="#" class="pull-right">
+							<input type="text" placeholder="Search">
+							<button class="p-color-bg tran3s"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</form>-->
+
+						<div class="pull-right">
+						<p>
+								<br/>
+								
+								<span class="p-color" style="font-size:24px;"><i class="fa fa-phone" aria-hidden="true"></i>
+								</span>
+							<span style="font-size:18px; color:#fff;"  >
+								&nbsp; <a href="tel:601831420" style="color:#fff" >+48 601 831 420</a>
+								</span>
+							</p>
+						</div>
+
+						
+						<nav class="navbar navbar-default">
+						   <!-- Brand and toggle get grouped for better mobile display -->
+						   <div class="navbar-header">
+						     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+						       <span class="sr-only">Toggle navigation</span>
+						       <span class="icon-bar"></span>
+						       <span class="icon-bar"></span>
+						       <span class="icon-bar"></span>
+						     </button>
+						   </div>
+						   <!-- Collect the nav links, forms, and other content for toggling -->
+						   <div class="collapse navbar-collapse" id="navbar-collapse-1">
+						     <ul class="nav navbar-nav">
+						       <li class="dropdown_menu"><a href="~/Home">Strona Główna</a>
+						       </li>
+						       <li><a href="~/Home/About">O kancelarii</a></li>
+						       <li class="dropdown_menu"><a href="#">Zakres usług</a>
+						      	<ul class="sub-menu">
+						       				<li><a href="~/Service/OsobyPrywatne">Osoby prywatne</a></li>
+						       			<li><a href="~/Service/MSP">Małe i średnie przedsiębiorstwa</a></li>
+						       			<li><a href="~/Service/KlienciKorporacyjni">Klienci korporacyjni</a></li>
+						       		</ul>
+						       </li>
+						       <li class="dropdown_menu"><a href="~/Salary">Wynagrodzenie</a>
+						       		
+						       </li>
+						       <li><a href="~/Contact">Kontakt</a></li>
+						     </ul>
+						   </div><!-- /.navbar-collapse -->
+						</nav>
+					</div> <!-- /.main_menu -->
+				</header>
+			</div>
+				@RenderBody()
+				</div>
+			<!-- Footer _______________________ -->
+			<footer>
+				<div class="top-footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-contact">
+								<h4>Informacje kontaktowe</h4>
+								<ul>
+									<li><i class="fa fa-map-marker" aria-hidden="true"></i> ul. Krupnicza 13 lok. 206A <br>50-075 Wrocław</li>
+									<li><i class="fa fa-envelope-o" aria-hidden="true"></i> igor@adwokatgladysz.eu </li>
+									<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:601831420" style="color:#fff">+48 601 831 420</a></li>
+									<li><i class="fa fa-clock-o" aria-hidden="true"></i> Poniedziałek - Piątek</li>
+								</ul>
+							</div> <!-- /.footer-contact -->
+
+
+							<div class="col-lg-5 col-md-3 col-sm-6 col-xs-12 footer-latest-news">
+								
+							</div> <!-- /.footer-latest-news -->
+
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 footer-mail">
+								<h4>Wyślij wiadomość</h4>
+								<p style="text-align:justify">Jeżeli potrzebujesz pomocy z chęcią odpowiemy na twoje wszystkie pytania.</p>
+
+								<form action="#">
+									<input type="email" placeholder="Email">
+									<button class="p-color-bg tran3s"><i class="fa fa-location-arrow" aria-hidden="true"></i></button>
+								</form>
+
+								<ul>
+									<li><a href="#" class="hvr-rectangle-out tran3s"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="hvr-rectangle-out tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="hvr-rectangle-out tran3s"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="hvr-rectangle-out tran3s"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="hvr-rectangle-out tran3s"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+								</ul>
+							</div> <!-- /.footer-mail -->
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</div> <!-- /.top-footer -->
+
+				<div class="bottom-footer"><p>Copyright 2016 &copy; 
+<!--				<a href="http://themeforest.net/user/themazine/portfolio" class="p-color tran3s" target="_blank">Kancela</a> | Designed with love by <a href="http://themeforest.net/user/template_mr/portfolio" class="p-color tran3s" target="_blank">template_mr</a>-->
+				</p></div>
+			</footer>
+
+</body>
+</html>
